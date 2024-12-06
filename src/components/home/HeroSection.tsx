@@ -37,7 +37,7 @@ const selectHandler = () => {};
                     <DivAnimateX position={-60}>
                     <div className="hero-slider-caption">
                       <h2 data-animation="fadeInUp" data-delay=".7s">
-                        <span>2560</span> Thousands Dream Jobs Available Now
+                        <span>Hundreds</span> Of Dream Jobs Waiting For You
                       </h2>
                       <div className="job-hero-form">
                         <div>
