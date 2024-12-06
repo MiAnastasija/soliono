@@ -2,7 +2,7 @@
 import { LocationsData, careerLavelData, categoryData, employCategory, experienceData, genderData, qualificationData, teamSize } from "@/data/nice-select-data";
 import NiceSelect from '@/elements/NiceSelect';
 import React from 'react';
-import thumb from "../../../public/assets/img/bg/banner-job.png"
+import thumb from "../../../public/assets/img/bg/sol-job-ad.jpg"
 import Image from "next/image";
 import Link from "next/link";
 const EmploySidebarFilter = () => {

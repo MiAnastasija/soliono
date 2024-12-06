@@ -1,6 +1,6 @@
 import React from "react";
 import shapeImg from "../../../public/assets/img/shape/dot-shape.png";
-import bgImg from "../../../public/assets/img/page-title/page-title-1.jpg";
+import bgImg from "../../../public/assets/img/page-title/jobs-header-original.jpg";
 import Image from "next/image";
 import Link from "next/link";
 interface propsType {

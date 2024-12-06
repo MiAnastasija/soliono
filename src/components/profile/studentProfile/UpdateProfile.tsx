@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import bgImg from "../../../../public/assets/img/page-title/page-title-1.jpg";
+import bgImg from "../../../../public/assets/img/page-title/jobs-header-original.jpg";
 import thumb from "../../../../public/assets/img/team/team-1.jpg";
 import Image from "next/image";
 import RestPasswordForm from "@/forms/RestPasswordForm";
