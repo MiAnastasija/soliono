@@ -1,0 +1,820 @@
+a {
+  text-decoration: none;
+}
+
+.brand-active .slick-arrow {
+  position: absolute;
+  top: 0px !important;
+  background: $white;
+  height: 40px;
+  width: 40px;
+  border: 0;
+  font-size: 19px;
+}
+.custom-zindex {
+  z-index: 1;
+}
+
+.job-instructor-img {
+  height: 50px;
+  width: 50px;
+}
+.employer__head-thumb {
+  height: 50px;
+  width: 50px;
+}
+
+.counter-largeText div span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.contact__inner {
+  position: relative;
+  z-index: 5;
+}
+.contact__inner::before {
+  position: absolute;
+  content: "";
+  top: -85px;
+  left: -120px;
+  width: calc(100% + 240px);
+  height: calc(100% + 145px);
+  background: $white;
+  border-top: 5px solid $yellow;
+  z-index: -1;
+  @media #{$xs, $sm, $md, $lg, $laptop} {
+    top: -70px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 100px);
+  }
+  @media #{$maxXs} {
+    top: -70px;
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+}
+
+.team__information::after {
+  @media #{$maxXs} {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+}
+.team__avater::after {
+  @media #{$maxXs} {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+}
+
+.register__mail {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.register__input {
+  position: relative;
+  margin-bottom: 15px;
+}
+.contact__input {
+  position: relative;
+  margin-bottom: 10px;
+}
+.job-input-2 {
+  position: relative;
+  margin-bottom: 3px;
+}
+.error-msg {
+  position: absolute;
+  font-size: 12px;
+  margin-top: -13px;
+  text-transform: capitalize;
+}
+.error-msg-two {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.post-input {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.error-msg-three {
+  font-size: 12px;
+  position: absolute;
+  bottom: -30px;
+  text-transform: capitalize;
+}
+.adds-style {
+  background: $black-soft !important;
+  color: $white !important;
+}
+
+.close-style {
+  background: $yellow !important;
+  color: $white !important;
+}
+
+// job grid card
+.job-wrapper {
+  padding: 25px;
+}
+.company_name {
+  display: block;
+  margin: 2px 0;
+  color: $theme-color;
+  font-size: 14px;
+  text-transform: capitalize;
+  i {
+    color: $theme-color;
+  }
+}
+.experience_sallary {
+  span {
+    i {
+      color: $theme-color;
+      margin: 6px;
+    }
+  }
+  @media #{$xs} {
+    span {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.skills_tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills_tags p {
+  background: $grey;
+  margin: 0px 5px 5px 0px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+.dead_line {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.job-salary {
+  i {
+    color: $theme-color;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+
+.posted_time {
+  z-index: 1;
+  i {
+    color: $theme-color;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+.job_card_footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  @media #{$xs} {
+    display: block;
+    .job-btn {
+      margin-top: 15px;
+    }
+  }
+}
+
+.save_post {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  padding: 15px;
+  background: $grey;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: $theme-color;
+  transition: all 0.3s ease-out;
+
+  @media #{$xs} {
+    display: none;
+  }
+
+  button {
+    i {
+      cursor: pointer;
+      transition: color 0.3s ease-out; /* Add transition property here */
+    }
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: $yellow;
+    color: $white;
+  }
+
+  &:hover button i {
+    color: $white; /* Apply color change during hover */
+  }
+}
+
+.company_title i {
+  color: $theme-color;
+  font-size: 14px;
+}
+
+.employe_card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.employe_cards span {
+  background: $white;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid $border-13;
+  font-size: 18px;
+}
+
+.employe_cards {
+  @media #{$xs, $sm} {
+    margin-top: 10px;
+  }
+  @media #{$md,$lg} {
+    margin-top: 18px;
+  }
+}
+
+.employe_card_body .job-meta span {
+  margin-right: 5px;
+}
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-meta span i {
+  color: $theme-color;
+  font-size: 14px;
+}
+
+.job-instructor-profile {
+  @media #{$xs, $sm} {
+    display: flex;
+    flex-direction: column;
+    .job-instructor-img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.job-meta span.emp-rating i {
+  font-size: 10px;
+  color: $yellow;
+}
+
+.order-button-payment .checkout_btn {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card_wrap {
+  border: 1px solid $border-13;
+  padding: 15px;
+}
+.invoice_heading h2 {
+  margin-left: 15px;
+  border-bottom: 1px solid $border-13;
+  padding-bottom: 20px;
+  color: #1c2733;
+}
+
+// header one logo
+.header_one_logos .logo-black img {
+  @media #{$xs} {
+    height: 40px;
+  }
+}
+.header_one_logos .logo img {
+  width: 190px;
+  height: 55px;
+  @media #{$xs} {
+    width: 180px;
+    height: 40px;
+  }
+}
+.header-area {
+  @media #{$xs} {
+    padding: 15px 0;
+  }
+}
+
+.progress-wrap {
+  @media #{$xs} {
+    right: 25px;
+  }
+}
+.progress-wrap.active-progress {
+  @media #{$xs} {
+    bottom: 25px;
+  }
+}
+
+.team__quote {
+  @media #{$maxXs} {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .team__quote-text {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+// logo style
+
+.responsive_menu.logo img {
+  height: 45px;
+  width: 150px;
+}
+
+// header two
+
+.header_two .logo-black img {
+  @media #{$xxs} {
+    height: 30px;
+    width: 180px;
+  }
+}
+.header_two .logo-black {
+  display: block;
+}
+
+// === pagination ===
+
+// portfolio style four start here
+.portfolios-pagination-a {
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 0px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 0px;
+  opacity: 1;
+  height: 6px;
+  width: 20px;
+  border-radius: 30px;
+  border: none;
+  transform: scale(1);
+
+  @media #{$xxs} {
+    margin: 0px 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $yellow !important;
+    width: 40px !important;
+    height: 5px !important;
+    border-radius: 10px !important;
+  }
+  .swiper-pagination-bullet {
+    background: $body-text-color;
+    width: 15px;
+    height: 5px;
+    border-radius: 3px;
+    font-size: 0;
+    border: none;
+  }
+}
+
+.candidate__inner::after {
+  @media #{$xs} {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+}
+.employer__inner::after {
+  @media #{$xs} {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+}
+
+.employer__btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.bd-portfolio-active-two.bd-portfolio-active-two,
+.bd-team-active.bd-team-active {
+  .portfolio-dots,
+  .team-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.bd-testimonial-four-active.bd-testimonial-four-active {
+  .testimonial-dots {
+    position: absolute;
+    bottom: 0px;
+    left: calc(0% + 295px);
+
+    @media #{$md,$sm} {
+      left: calc(0% + 185px);
+    }
+
+    @media #{$xxs} {
+      left: 0px;
+    }
+  }
+}
+
+.header_padding {
+  padding-left: 55px;
+  padding-right: 55px;
+  @media #{$xs, $sm,  $md} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow {
+  @media #{$xs, $sm,  $md} {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid_two_job_card .job-salary {
+    margin-bottom: 15px;
+  }
+  .job-salary span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 1200px) {
+  .employer__btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  .job_area_btn {
+    margin-top: 15px;
+  }
+
+  .job_sidebar .job-salary {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+}
+@media (max-width: 991px) {
+  .about__content {
+    padding-left: 0px;
+  }
+}
+
+@media #{$xs, $sm,$md} {
+  .footer__widget {
+    padding-left: 10px;
+  }
+}
+
+.footer__social ul li {
+  margin-right: 3px;
+}
+.team__social-2 ul li {
+  margin-right: 3px;
+}
+
+//
+
+.more_jobs_btn {
+  margin: 0px 20px 0px 0px;
+  position: relative;
+  span {
+    position: absolute;
+    background: $yellow;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: -2px;
+    top: -13px;
+    i {
+      color: $grey;
+    }
+  }
+
+  @media #{$xs} {
+    span {
+      top: 31px;
+    }
+  }
+}
+
+// search form
+.search_form {
+  width: 100%;
+  background: $white;
+  position: relative;
+  input {
+    border: none;
+    width: 250px;
+    padding: 16px;
+  }
+  button {
+    position: absolute;
+    right: 19px;
+    top: 13px;
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+  }
+}
+.clear_search_btn {
+  border: none;
+  background: $yellow;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+}
+//  button style
+
+.btn_outline {
+  background: transparent;
+  border: 2px solid $grey;
+  margin: 20px;
+  :hover {
+    border: none;
+  }
+}
+
+.sticky .btn_outline {
+  background: $theme-color;
+  color: $white;
+}
+.sticky .btn_outline:hover {
+  background: $yellow;
+  color: $white;
+}
+
+.brand__item {
+  text-align: center;
+}
+
+.register__mail {
+  p {
+    text-align: left;
+  }
+}
+.job-salary span i {
+  font-size: 14px;
+}
+
+.client-say-img img {
+  border: 3px solid $white;
+  border-radius: 50%;
+}
+
+// footer logo
+.footer__widget-title .logo img {
+  height: 60px;
+  width: 200px;
+}
+
+.counter-wrapper {
+  padding: 50px 30px;
+  background-color: $white;
+}
+.count-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile_update_form {
+  background: transparent !important;
+}
+.upload-profile-pic img {
+  height: 120px;
+  width: 120px;
+}
+
+// sort list and save post
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.cart-area .table-content table {
+  background: $white;
+  border-color: $body-text-color;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: $body-text-color;
+}
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+@media #{$md,$tablet} {
+  .job-input::after {
+    right: 40px;
+  }
+}
+@media #{$xs} {
+  .single-fact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cat-button {
+    z-index: 0;
+  }
+}
+
+.apply_now_btn:hover {
+  color: $white !important;
+}
+.fix_button:hover {
+  color: $white !important;
+}
+.job-share ul li {
+  margin-right: 3px;
+}
+
+@media (max-width: 450px) {
+  .ads_btn_home_two {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 334px) {
+  .starter__thumb-wrapper {
+    padding-left: 20px;
+  }
+}
+.errro_wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__form {
+  @media #{$xs} {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1401px) {
+  .job-input {
+    width: 40%;
+  }
+  .job-hero-form input {
+    width: 260px;
+  }
+}
+
+@media #{$md,$tablet} {
+  .job-input {
+    width: 35%;
+  }
+  .job-hero-form input {
+    width: 160px;
+  }
+}
+@media #{$lg} {
+  .job-input {
+    width: 35%;
+  }
+  .job-hero-form input {
+    width: 190px;
+  }
+}
+@media #{$maxXs} {
+  .job-hero-form input {
+    width: 90%;
+  }
+}
+@media #{$lg} {
+  .show_header_one {
+    display: block !important;
+  }
+}
+@media #{$xs, $md} {
+  .show_header_one {
+    display: none !important;
+  }
+}
+
+// home two input
+
+.home_two_input {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.home_two_input input::after {
+  position: absolute;
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Pro";
+  top: 20px;
+  color: #f5be2f;
+  right: 15px;
+}
+
+.home_two_input input {
+  padding: 0 40px;
+  width: 100%;
+}
+
+.job-tags a {
+  padding: 3px 13px;
+}
+
+// reset pagination
+.basic-pagination ul li a i {
+  transition: all 0.3s ease 0s;
+}
+
+.company_location {
+  margin-left: 70px;
+  @media #{$xs} {
+    margin-left: 0px;
+  }
+}
+
+.employe_socials {
+  display: flex;
+  align-items: center;
+  & a {
+    margin-right: 5px;
+    color: #403d3d;
+  }
+}
+
+.responsive_cls_btn {
+  background: transparent;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+.sidebar__close {
+  right: 33px;
+}

@@ -1,0 +1,5 @@
+.text-lg-right {
+  @media #{$laptop,$xxl} {
+    text-align: right !important;
+  }
+}
