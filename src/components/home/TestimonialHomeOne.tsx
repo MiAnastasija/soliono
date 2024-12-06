@@ -10,6 +10,7 @@ import testImg4 from "../../../public/assets/img/testominal/test-img3.png";
 import testImg5 from "../../../public/assets/img/testominal/test-img5.png";
 import bgImg from "../../../public/assets/img/bg/map.png";
 import Image from "next/image";
+import DivAnimateY from "../utils/DivAnimateY";
 const TestimonialHomeOne = () => {
   const testimonialData = [
     {
@@ -57,8 +58,10 @@ const TestimonialHomeOne = () => {
         style={{ backgroundImage: `url(${bgImg.src})` }}
       >
         <div className="container">
+
           <div className="row">
             <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+            <DivAnimateY>
               <div className="section-title text-center ml-50 mr-50 mb-45">
                 <h2>What Our Candidates Say</h2>
                 <p>
@@ -66,6 +69,7 @@ const TestimonialHomeOne = () => {
                   themselves about their transformative experiences
                 </p>
               </div>
+              </DivAnimateY>
             </div>
           </div>
           <div className="row">

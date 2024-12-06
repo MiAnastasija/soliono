@@ -9,6 +9,7 @@ import NiceSelect from "@/elements/NiceSelect";
 import { categoryData } from "@/data/nice-select-data";
 import Link from "next/link";
 import { imageLoader } from "@/hooks/imageLoader ";
+import DivAnimateX from "../utils/DivAnimateX";
 const HeroSection = () => {
 
 const selectHandler = () => {};
@@ -33,6 +34,7 @@ const selectHandler = () => {};
                     <div className="hero-dot-shape d-none d-lg-block">
                       <Image loader={imageLoader} placeholder="blur" loading='lazy' src={shapeOne}  alt="hero-img" />
                     </div>
+                    <DivAnimateX position={-60}>
                     <div className="hero-slider-caption">
                       <h2 data-animation="fadeInUp" data-delay=".7s">
                         <span>2560</span> Thousands Dream Jobs Available Now
@@ -57,6 +59,7 @@ const selectHandler = () => {};
                       </div>
                       
                     </div>
+                    </DivAnimateX>
                   </div>
                 </div>
                 <div className="col-xl-5 d-none d-xl-block">

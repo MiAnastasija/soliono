@@ -7,6 +7,7 @@ import img3 from "../../../public/assets/img/icon/services/icon-3.png";
 import bgImg1 from "../../../public/assets/img/shape/hexa.png";
 import Image from "next/image";
 import Link from "next/link";
+import DivAnimateY from "../utils/DivAnimateY";
 
 const ServiceHomeOne = () => {
   const servicesData = [
@@ -41,12 +42,14 @@ const ServiceHomeOne = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-10 offset-md-1">
+            <DivAnimateY>
               <div className="section-title text-center mb-45">
                 <h2>How To Get Started</h2>
                 <p>
                 Set up a comprehensive profile highlighting your skills, experience, and aspirations. Make a strong first impression on potential employers.
                 </p>
               </div>
+              </DivAnimateY>
             </div>
           </div>
           <div className="row">

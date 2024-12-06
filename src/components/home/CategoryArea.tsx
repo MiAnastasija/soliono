@@ -1,12 +1,14 @@
 import { allCategoryData } from "@/data/categoires-data";
 import Link from "next/link";
 import React from "react";
+import DivAnimateY from "../utils/DivAnimateY";
 
 const CategoryArea = () => {
   return (
     <>
       <div className="categories-area pt-80 grey-bg pb-50">
         <div className="container">
+        <DivAnimateY>
           <div className="row">
             <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
               <div className="section-title text-center ml-50 mr-50 mb-45">
@@ -17,6 +19,8 @@ const CategoryArea = () => {
               </div>
             </div>
           </div>
+          </DivAnimateY>
+          <DivAnimateY>
           <div className="row">
             {allCategoryData?.map((item) => (
               <div key={item?.id} className="col-xl-4 col-lg-6 col-md-12 mb-30">
@@ -35,8 +39,9 @@ const CategoryArea = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))}           
           </div>
+          </DivAnimateY>
         </div>
       </div>
     </>

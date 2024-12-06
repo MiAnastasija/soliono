@@ -5,6 +5,7 @@ import imgThree from "../../../public/assets/img/starter/starter-2.jpg";
 import imgFour from "../../../public/assets/img/starter/starter-3.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import DivAnimateY from "../utils/DivAnimateY";
 const StaterAreaSec = () => {
   return (
     <>
@@ -12,12 +13,14 @@ const StaterAreaSec = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+            <DivAnimateY>
               <div className="section-title text-center mb-45">
                 <h2>How To Get Started</h2>
                 <p className="pl-65 pr-65">
                 Set up a comprehensive profile highlighting your skills, experience, and aspirations. 
                 </p>
               </div>
+              </DivAnimateY>
             </div>
           </div>
           <div className="row">

@@ -1,6 +1,7 @@
 import React from "react";
 import SingleJobGridCard from "../shearedComponents/SingleJobGridCard";
 import Link from "next/link";
+import DivAnimateX from "../utils/DivAnimateX";
 const JobArea = () => {
   return (
     <>
@@ -8,6 +9,7 @@ const JobArea = () => {
         <div className="container">
           <div className="row align-items-center mb-45">
             <div className="col-xl-5">
+            <DivAnimateX position={-60}>
               <div className="section-title">
                 <h2>35k+ Recent Jobs Available</h2>
                 <p>
@@ -15,13 +17,16 @@ const JobArea = () => {
                   expertise. Our job portal curates a dynamic list of openings
                 </p>
               </div>
+              </DivAnimateX>
             </div>
             <div className="col-xl-7">
+            <DivAnimateX position={60}>
               <div className="section-btn text-left text-lg-right">
                 <Link className="b-btn job_area_btn" href="job-grid">
                   Browse All Jobs <i className="far fa-arrow-right"></i>
                 </Link>
               </div>
+              </DivAnimateX>
             </div>
           </div>
           <div className="row">
