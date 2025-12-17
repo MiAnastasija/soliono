@@ -12,7 +12,7 @@ const FooterOne = () => {
           <div
             className="footer__bg"
             style={{ backgroundImage: `url(${bgImg.src})` }}
-          ></div> 
+          ></div>
           <div className="footer__top black-bg pt-80 pb-30">
             <div className="container">
               <div className="row">
@@ -27,7 +27,10 @@ const FooterOne = () => {
                     </div>
                     <div className="footer__widget-content">
                       <p>
-                      Discover the latest in Job with Soliono. Your go-to source for insights, trends, and Internship. Explore our user-friendly platform for a seamless experience. Elevate your  Job journey with us.
+                        Discover the latest in Job with Soliono. Your go-to
+                        source for insights, trends, and Internship. Explore our
+                        user-friendly platform for a seamless experience.
+                        Elevate your Job journey with us.
                       </p>
                       <div className="footer__info d-sm-flex justify-content-between pr-40">
                         <div className="footer__info-item d-flex align-items-center mb-30">
@@ -36,7 +39,9 @@ const FooterOne = () => {
                           </div>
                           <div className="text">
                             <h4>
-                              <span className="counter"><CountUpContent number={3560} text="+" /> </span>
+                              <span className="counter">
+                                <CountUpContent number={3560} text="+" />{" "}
+                              </span>
                             </h4>
                             <span>Available Jobs</span>
                           </div>
@@ -47,8 +52,9 @@ const FooterOne = () => {
                           </div>
                           <div className="text">
                             <h4>
-                             
-                              <span className="counter"><CountUpContent number={8563} text="+" /> </span>
+                              <span className="counter">
+                                <CountUpContent number={8563} text="+" />{" "}
+                              </span>
                             </h4>
                             <span>Employees</span>
                           </div>
@@ -68,16 +74,24 @@ const FooterOne = () => {
                           <div className="footer__link">
                             <ul>
                               <li>
-                                <Link href="/job-grid">Looking For A Jobs?</Link>
+                                <Link href="/job-grid">
+                                  Looking For A Jobs?
+                                </Link>
                               </li>
                               <li>
-                                <Link href="/job-sidebar">International Jobs</Link>
+                                <Link href="/job-sidebar">
+                                  International Jobs
+                                </Link>
                               </li>
                               <li>
-                                <Link href="/application-form">Upload Resume</Link>
+                                <Link href="/application-form">
+                                  Upload Resume
+                                </Link>
                               </li>
                               <li>
-                                <Link href="/privacy-policy">Setting & Privacy</Link>
+                                <Link href="/privacy-policy">
+                                  Setting & Privacy
+                                </Link>
                               </li>
                               <li>
                                 <Link href="/blog-standard">Career Advice</Link>
@@ -99,19 +113,27 @@ const FooterOne = () => {
                           <div className="footer__link">
                             <ul>
                               <li>
-                                <Link href="/job-sidebar">Finance & Banking</Link>
+                                <Link href="/job-sidebar">
+                                  Finance & Banking
+                                </Link>
                               </li>
                               <li>
-                                <Link href="/job-sidebar">Business & Consulting</Link>
+                                <Link href="/job-sidebar">
+                                  Business & Consulting
+                                </Link>
                               </li>
                               <li>
-                                <Link href="/job-sidebar">Creative Designer</Link>
+                                <Link href="/job-sidebar">
+                                  Creative Designer
+                                </Link>
                               </li>
                               <li>
                                 <Link href="/job-sidebar">Web Developer</Link>
                               </li>
                               <li>
-                                <Link href="/job-sidebar">Digital Marketing</Link>
+                                <Link href="/job-sidebar">
+                                  Digital Marketing
+                                </Link>
                               </li>
                               <li>
                                 <Link href="/job-sidebar">Senior Manager</Link>
@@ -131,7 +153,8 @@ const FooterOne = () => {
                     <div className="footer__widget-content">
                       <div className="footer__subscribe">
                         <p>
-                        Subscribe for job alerts, career tips, and exclusive opportunities
+                          Subscribe for job alerts, career tips, and exclusive
+                          opportunities
                         </p>
                         <div className="footer__subscribe-form">
                           <form action="#">
@@ -158,7 +181,7 @@ const FooterOne = () => {
                 <div className="col-xl-6 col-lg-6 col-md-7">
                   <div className="footer__copyright-text">
                     <p>
-                      © Copyright 2024 <Link href="/">Soliono</Link> All Rights
+                      © Copyright 2026 <Link href="/">Soliono</Link> All Rights
                       Reserved.
                     </p>
                   </div>
